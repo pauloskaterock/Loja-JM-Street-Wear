@@ -1,0 +1,24 @@
+/* Reset básico + Fontes personalizadas */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Personalizações extras (se necessário) */
+.bg-skate-pattern {
+  background-image: url('/img/skate.jpg');
+  background-size: cover;
+}
+
+
+
+/* Personalizações extras do Tailwind */
+@layer components {
+  .btn-primary {
+    @apply bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700;
+  }
+  .product-card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow;
+  }
+}

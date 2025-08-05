@@ -10,6 +10,36 @@
 </head>
 
 <body style="font-family: verdana; font-size: 16px;">
+
+
+    <button data-action="click->cart#addItem"
+        data-product-id="123"
+        data-product-name="Camiseta Thrasher"
+        data-product-price="89.90"
+        data-product-image="/img/produtos/camiseta-thrasher.jpg"
+        class="btn-primary">
+  Adicionar ao Carrinho
+</button>
+
+<!-- Badge do Carrinho (navbar) -->
+<div data-controller="cart" class="relative">
+  <button class="flex items-center">
+    🛒
+    <span data-cart-target="itemsCount" 
+          class="hidden absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+      0
+    </span>
+  </button>
+
+  <!-- Dropdown do Carrinho -->
+  <div class="hidden absolute right-0 mt-2 w-64 bg-white shadow-lg rounded-lg p-4" data-cart-target="itemsList">
+    <div data-cart-target="emptyMessage" class="text-gray-500">Carrinho vazio</div>
+    <div class="mt-4 font-bold" data-cart-target="totalPrice">R$ 0.00</div>
+  </div>
+</div>
+
+
+
     <!--Criando a tabela para definir a estrutura -->
     <table  align="center" width="1000px">
         <tr>
@@ -63,6 +93,8 @@
 
         </tr>
     </table>
+
+    
 
 </body>
 

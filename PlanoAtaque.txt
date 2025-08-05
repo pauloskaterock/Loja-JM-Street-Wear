@@ -1,0 +1,34 @@
+📌 Plano de Ataque (Roadmap)
+Objetivo Final: Criar uma loja virtual completa com Rails (API), React (ou Hotwire), e infraestrutura robusta.
+Faseamento (vamos passo a passo):
+
+🔧 Fase 1: Refatorar o Frontend (HTML/CSS)
+Remover tabelas (má prática para layout) → Substituir por semântica HTML5 + Flexbox/Grid.
+
+Adicionar Tailwind CSS (substituir o CSS manual).
+
+Implementar responsividade (mobile-first).
+
+Organizar assets (imagens, CSS, JS em pastas corretas).
+
+🚀 Fase 2: Adicionar Interatividade
+Substituir JS inline por Stimulus.js (ou React, se preferir).
+
+Criar um carrinho de compras dinâmico (localStorage → depois migrar para backend).
+
+🔗 Fase 3: Migrar para Rails (API)
+Criar backend Rails com:
+
+Model Product (camisas, bones, etc.).
+
+API REST (ou GraphQL) para produtos/contatos.
+
+Autenticação JWT (para futura área admin).
+
+🎨 Fase 4: Evoluir a Arquitetura
+Sidekiq (para emails de contato).
+
+Redis (cache de produtos).
+
+GitHub Actions (CI/CD para deploy automático).
+
